@@ -1,0 +1,75 @@
+/*poppins font from google font */
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Open+Sans:wght@400;800&family=Poppins:wght@500;600;700&family=Work+Sans:wght@500&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+/* header section */
+header{
+    background: #FFF;
+    padding:40px 120px ;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-title{
+    color: #3A3A3A;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+nav>ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 15px;
+}
+nav li>a{
+    text-decoration: none;
+}
+/* header content styles */
+.camera-box{
+    /* margin-top: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.camera-content{
+  text-align: left;
+}
+.camera-box-title{
+    color: #3A3A3A;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+.camera-box-description{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn-primary{
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    padding: 5px 24px;
+    color: #FFF;
+}
+img{
+    background-image: url("images/circle desing.svg");
+}
+/* header section end */
+/* sponsors section styles */
+.sponsors-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+    background: #FFF;
+    margin: 60px 160px 100px 60px;
+}
