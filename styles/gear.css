@@ -73,7 +73,15 @@ img{
     margin: 0 auto;
     color: #787885;
 }
-.sponsors-div{
+.sponsors{
+    display: flex;
+    gap:20px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* .sponsors-div{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -81,7 +89,7 @@ img{
     height: 20%;
     background: #FFF;
     margin: 60px 160px 100px 60px;
-}
+} */
 /* popular collection section styles */
 .popular-section-title{
     color: #3A3A3A;
@@ -127,4 +135,51 @@ img{
     color: #787885;
     font-size: .8rem;
     font-weight: 700;
+}
+/* media quary */
+@media screen and (max-width:576px){
+    header{
+        padding: 0;
+    }
+    header h3{
+        text-align: center;
+        padding: 0 50px;
+    }
+   header ul{
+    display: none;
+   }
+    nav{
+        width: 100%;
+        margin:0 auto;
+    }
+    nav>ul{
+        flex-direction: column;
+    }
+    .horizental{
+        margin-top:20px;
+        text-align: center;
+    }
+    .camera-box
+    {
+        flex-direction: column;
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    .sponsors{
+       flex-wrap: wrap;
+
+    }
+    .popular-section{
+        padding: 0;
+        margin: auto;
+    }
+    .popular-img-box{
+        grid-template-columns: 1fr;
+        padding:0 0;
+        margin: 0;
+    }
+    .camera-content img{
+      min-width: 400px;
+    }
 }
