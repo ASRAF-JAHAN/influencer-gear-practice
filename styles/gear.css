@@ -143,12 +143,11 @@ header{
     font-weight: 700;
 }
 /* features container styles */
-/* .features-container{
+.features-container{
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     width: 1250px;
     margin: 70px auto 30px;
 
@@ -164,15 +163,13 @@ header{
     font-size:2.5rem;
     font-weight: 700;
     line-height: 60px; 
-    border: 1px solid green;
 }
 .features-content p{
-    border: 1px solid red;
     color: #6C6C6C;
     font-size: .7rem;
     font-weight: 700;
     line-height: 28px; 
-} */
+}
 /* media quary */
 @media screen and (max-width:576px){
     header{
@@ -222,14 +219,26 @@ header{
     }
     .features-container{
         flex-direction: column;
+        flex-direction: column-reverse;
+        text-align: center;
         width: 100%;
     
     }
     .features-img{
+        margin-top: 20px;
         width:100%;
     }
     .div-img img{
         margin-left: 20px;
         width: 80%;
+    }
+    .features-img img{
+        max-width: 80%;
+        /* margin-right: 20px; */
+    }
+    .features-content{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
 }
